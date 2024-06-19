@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <h1>Formulário de Comparação de Senhas</h1>
+    <form>
+        <div class="mb-3" id="campoSenha1">
+            <label for="senha1" class="form-label">Senha:</label>
+            <input type="password" id="senha1" name="senha1" class="form-control" required oninput="validarSenha()">
+        </div>
+        <div class="mb-3" id="campoSenha2">
+            <label for="senha2" class="form-label">Confirme a Senha:</label>
+            <input type="password" id="senha2" name="senha2" class="form-control" required oninput="validarSenha()">
+        </div>
+    </form>
+    <p id="resultado"></p>
+
+    <script>
+       function validarSenha() {
+            var senha1 = document.getElementById("senha1").value;
+            var senha2 = document.getElementById("senha2").value;
+            var resultado = document.getElementById("resultado");
+            var campoSenha1 = document.getElementById("campoSenha1");
+            var campoSenha2 = document.getElementById("campoSenha2");
+
+            if (senha2.length > 0) {
+                if (senha1 === senha2) {
+                    resultado.innerHTML = "Senhas coincidem!";
+                    resultado.style.color = "green";
+                    campoSenha1.classList.add("is-valid");
+                    campoSenha2.classList.add("is-valid");
+                    campoSenha1.classList.remove("is-invalid");
+                    campoSenha2.classList.remove("is-invalid");
+                } else {
+                    resultado.innerHTML = "Senhas não coincidem!";
+                    resultado.style.color = "red";
+                    campoSenha1.classList.add("is-invalid");
+                    campoSenha2.classList.add("is-invalid");
+                    campoSenha1.classList.remove("is-valid");
+                    campoSenha2.classList.remove("is-valid");
+                }
+            } else {
+                resultado.innerHTML = "";
+                campoSenha1.classList.remove("is-valid");
+                campoSenha2.classList.remove("is-valid");
+                campoSenha1.classList.remove("is-invalid");
+                campoSenha2.classList.remove("is-invalid");
+            }
+        }
+
+    </script>
+
+<!-- <h1>Formulário de Comparação de Senhas</h1>
+<h1>Formulário de Comparação de Senhas</h1>
+    <form>
+        <label for="senha1">Senha:</label>
+        <input type="password" id="senha1" name="senha1" required oninput="verificarAoAlterarFoco()">
+        <br>
+        <label for="senha2">Confirme a Senha:</label>
+        <input type="password" id="senha2" name="senha2" required oninput="verificarAoAlterarFoco()">
+        <br>
+    </form>
+    <p id="resultado"></p>
+
+<script>
+    function validarSenha() {
+            var senha1 = document.getElementById("senha1").value;
+            var senha2 = document.getElementById("senha2").value;
+            var resultado = document.getElementById("resultado");
+
+            if (senha1 === senha2) {
+                resultado.innerHTML = "Senhas coincidem!";
+                resultado.style.color = "green";
+            } else {
+                resultado.innerHTML = "Senhas não coincidem!";
+                resultado.style.color = "red";
+            }
+        }
+        
+        // Adiciona verificação automática quando o usuário altera o foco
+        function verificarAoAlterarFoco() {
+            validarSenha();
+        }
+</script> -->
+</body>
+</html>

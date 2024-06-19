@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Green Planet</title>
+
+	<link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+	
+	
+	<!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Javascript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+	
+</head>
+
+<body>
+<div class="container-fluid">
+	<!-- start header -->
+	<header class="fixed-top">
+		<nav class="navbar navbar-expand-md px-4">
+			<div class="navbar-brand">
+				<a href="#home"><img src="imagens/logo.png" alt=""></a>
+				<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menubar"><span class="fa-solid fa-bars"></span></button>
+			</div>
+
+			<div class="collapse navbar-collapse" id="menubar">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a href="#home" class="nav-link text-white">home</a></li>
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown">meio ambiente</a>
+						<ul class="dropdown-menu p-3">
+							<li><a href="#renovavel" class="dropdown-item text-white">energia renovável</a></li>
+							<li><a href="#floresta" class="dropdown-item text-white">floresta amazônica</a></li>
+							<li><a href="#eolica" class="dropdown-item text-white">energia eólica</a></li>
+							<li><a href="#aquecimento" class="dropdown-item text-white">aquecimento global</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown">minha conta</a>
+						<ul class="dropdown-menu p-3">
+							<li><a href="login.html" class="dropdown-item text-white">login</a></li>
+							<li><a href="cadastro.html" class="dropdown-item text-white">cadastro</a></li>
+						</ul>
+					</li>
+					<li class="nav-item"><a href="#" class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal-contato">contato</a></li>
+				</ul>
+			</div>
+			<div>
+				<a href="#"><span class="fa-brands fa-facebook-square text-white"></span></a>
+				<a href="#"><span class="fa-brands fa-instagram-square  text-white ms-2"></span></a>
+				<a href="#"><span class="fa-brands fa-twitter-square  text-white ms-2"></span></a>
+			</div>
+		</nav>
+	</header>
+    <div class="my-5 pt-4"></div>
+    <!-- start login -->
+    <form action="" method="post" class="ps-5 pb-4">
+        <h2 class="text-uppercase text-center fw-bold">Cadastro</h2>
+		<ul class="nav nav-tabs nav-justified my-5">
+			<li class="nav-item"><a href="#identificacao" class="nav-link active" data-bs-toggle="tab">Identificação</a></li>
+			<li class="nav-item"><a href="#endereco" class="nav-link" data-bs-toggle="tab">Endereço</a></li>
+			<li class="nav-item"><a href="#contato" class="nav-link" data-bs-toggle="tab">Contato</a></li>
+			<li class="nav-item"><a href="#enviar" class="nav-link" data-bs-toggle="tab">Enviar</a></li>
+		</ul>
+		<div class="tab-content">
+			<fieldset id="identificacao" class="tab-pane fade active show">
+				<h2><span class="fa-solid fa-user-plus"></span> Identificação</h2>
+				<div class="row">
+					<div class="col-md-6">
+						<label for="">Nome:</label>
+						<input type="text" name="tNome" placeholder="digite seu nome completo" class="form-control border-secondary" required>
+					</div>
+					
+					<div class="col-md-2">
+						<label for="">Nascimento:</label>
+						<input type="date" name="tNasc" class="form-control border-secondary" required>
+					</div>
+		
+					<div class="col-md-5">
+						<label for="">Email:</label>
+						<input type="email" placeholder="ex: johannsacconi@gmail.com" name="tEmail" class="form-control border-secondary" required id="email" oninput="verificaEmail()">
+						<p id="resultado1"></p>
+					</div>
+		
+					<div class="col-md-4"></div>
+		
+					<div class="col-md-4 mt-3">
+						<label for="">Senha: </label>
+						<div class="input-group">
+							<input type="password" id="senha1" oninput="validaSenha2()" name="tSenha1" placeholder="digite sua senha" class="form-control border-secondary" required data-bs-toggle="popover" data-bs-title="Atenção" data-bs-content="sua senha deve conter: <ul><li>no mínimo 8 caracteres</li> <li>uma letra maiúscula</li> <li>números</li> <li>caracteres especiais</li></ul>" data-bs-trigger="hover" data-bs-html="true" data-bs-custom-class="custom-popover" required>
+							<span class="input-group-text border-secondary pt-2" onclick="mostraSenha('senha1')">
+								<i class="fa-solid fa-eye-slash" id="olhoIcone1"></i>
+							</span>
+						</div>
+						<p id="resultado2" class="m-0"></p>
+					</div>
+		
+					<div class="col-md-4 mt-3">
+						<label for="">Confirme sua senha: </label>
+						<div class="input-group">
+							<input type="password" id="senha2" name="tSenha2" placeholder="digite sua senha novamente" 
+							class="form-control border-secondary" required data-bs-toggle="popover" data-bs-title="Atenção" 
+							data-bs-content="sua senha deve conter: <ul><li>no mínimo 8 caracteres</li> <li>uma letra maiúscula</li> 
+								<li>números</li> <li>caracteres especiais</li></ul>" data-bs-trigger="hover" data-bs-html="true" 
+								data-bs-custom-class="custom-popover" oninput="validaSenha2()" required>
+							<span class="input-group-text border-secondary pt-2" onclick="mostraSenha('senha2')">
+								<i class="fa-solid fa-eye-slash" id="olhoIcone2"></i>
+							</span>
+						</div>
+						<p id="resultado3" class="m-0"></p>
+					</div>
+					<div class="col-md-4"></div>
+					<div class="col-md-2 mt-3">
+						<label for="">CPF: </label>
+						<!--<input type="number" class="form-control border-secondary" value="0" min="0" max="5" name="" id="">-->
+						<input type="text" name="tCpf" placeholder="Digite seu CPF" class="form-control border-secondary"
+						onblur="verificarCPF()" oninput="formatarCPF(this)" required id="cpf">
+						<p id="resultado4"></p>
+					</div>
+		
+					<div class="col-md-1 mt-3">
+						<label for="">Sexo: </label>
+						<div class="form-check">
+							<input class="form-check-input border-secondary" name="tSex" type="radio" name="" id="" value="fem">
+							<label for="">Feminino</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input border-secondary" name="tSex" type="radio" name="" id="" value="masc">
+							<label for="">Masculino</label>
+						</div>
+					</div>
+		
+					<div class="col-md-5 mt-3">
+						<label for="">Envie uma foto: </label>
+						<input type="file" name="tFoto" class="form-control border-secondary">
+					</div>
+				</div>
+			</fieldset>
+	
+			<fieldset id="endereco" class="tab-pane fade mb-5 pb-5">
+				<h2><span class="fa-solid fa-address-card"></span> endereço</h2>
+				<div class="row">
+					<div class="col-md-5">
+						<label for="">Endereço:</label>
+						<input type="text" name="tEnderecoCasa" id="logradouro" placeholder="rua, avenida, praça, etc" class="form-control border-secondary" required>
+					</div>
+					<div class="col-md-2">
+						<label for="">Número:</label>
+						<input type="text" name="tNumCasa" placeholder="1" class="form-control border-secondary" required>
+					</div>
+					<div class="col-md-5"></div>
+		
+					<div class="col-md-3">
+						<label for="">Complemento:</label>
+						<input type="text" name="tComplementoCasa" id="complemento" placeholder="apto, casa, bloco, etc." class="form-control border-secondary" required>
+					</div>
+					<div class="col-md-4">
+						<label for="">Bairro:</label>
+						<input type="text" name="tBairroCasa" id="bairro" placeholder="bairro, jardim, condomínio, etc." class="form-control border-secondary" required>
+					</div>
+					<div class="col-md-5"></div>
+		
+					<div class="col-md-4">
+						<label for="">Cidade:</label>
+						<input type="text" name="tCidadeCasa" id="cidade" placeholder="digite sua cidade" class="form-control border-secondary" required>
+					</div>
+					<div class="col-md-3">
+						<label for="">CEP:</label>
+						<input type="text" name="tCEP" id="cep" placeholder="digite apenas nº" class="form-control border-secondary" oninput="consultarCEP()" required>
+						<p id="mensagemErro"></p>
+					</div>
+		
+				</div>
+			</fieldset>
+				<fieldset id="contato" class="tab-pane fade mb-5 pb-5">
+				<h2><span class="fa-solid fa-user-friends"></span> Contato</h2>
+				<div class="row">
+					<div class="col-md-2">
+						<label for="">Telefone:</label>
+						<input type="text" name="tTelefone" oninput="formatarTelefone(this)" placeholder="digite apenas números" class="form-control border-secondary">
+					</div>
+					<div class="col-md-2">
+						<label for="">celular:</label>
+						<input type="text" name="tTelefone" oninput="formatarCelular(this)" placeholder="digite apenas números" class="form-control border-secondary" required>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input border-secondary" id="">
+							<i class="fa-brands fa-whatsapp"></i> Whatsapp?
+						</div>
+					</div>
+					<div class="col-md-6"></div>
+		
+					<div class="col-md-5">
+						<label for="">Facebook:</label>
+						<div class="input-group">
+							<span class="input-group-text border-secondary pt2"><i class="fa-brands fa-facebook-f"></i></span>
+							<input type="text" name="tFacebook" placeholder="facebook" class="form-control border-secondary" required>
+						</div>
+					</div>
+					<div class="col-md-7"></div>
+		
+					<div class="col-md-5 mt-3">
+						<label for="">Instagram:</label>
+						<div class="input-group">
+							<span class="input-group-text border-secondary pt2"><i class="fa-brands fa-instagram"></i></span>
+							<input type="text" name="tInstagram" placeholder="instagram" class="form-control border-secondary" required>
+						</div>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset  id="enviar" class="tab-pane fade text-center">
+				<h2><span class="fab fa-wpforms"></span> Enviar formulário?</h2>
+				<div class="btn-group">
+					<input type="reset" value="Limpar" class="btn btn-danger mt-3">
+					<input type="submit" value="Enviar" class="btn btn-success mt-3">
+				</div>
+			</fieldset>
+		</div>
+    </form>
+
+    <script src="js/scripts.js"></script>
+
+    <!-- start footer -->
+	<footer class="py-3 px-5 text-light rodape no-margin">
+		<img src="imagens/logo.png" class="float-start">
+		<p class="float-end pt-3">&copy; 2023 - Green Planet</p>
+	</footer>
+</div>
+
+<!-- start modal -->
+<div class="modal fade" id="modal-contato" data-bs-backdrop="static" data-bs-keyboard="false">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form action="" method="get">
+				<div class="modal-header border-0">
+					<h2><span class="fa-regular fa-id-card"></span> Contato</h2>
+					<button class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body">
+					<label for="">Nome:</label>
+					<input type="text" name="tNome" placeholder="digite seu nome completo" class="form-control border-dark">
+					
+					<label for="" class="pt-3">Email:</label>
+					<input type="email" name="tEmail" placeholder="por ex.: joaodasilva@email.com" class="form-control border-dark mb-3">
+					
+					<label for="">Mensagem:</label>
+					<textarea name="tMsg" rows="5" placeholder="digite aqui a sua mensagem" class="form-control border-dark"></textarea>
+				</div>
+				<div class="modal-footer border-0 justify-content-center">
+					<input type="reset" value="limpar" class="btn btn-danger">
+					<input type="submit" value="enviar" class="btn btn-success">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- <script>
+    $(window).on('load',function(){
+	//$(document).ready(function(){
+    	$('#modal-contato').modal('show'); 
+	});
+</script> -->
+
+</body>
+</html>

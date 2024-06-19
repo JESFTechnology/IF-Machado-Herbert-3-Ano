@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Green Planet</title>
+
+	<link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+	
+	<!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Javascript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+	
+</head>
+<body>
+<div class="container-fluid">
+	<!-- start header -->
+	<header class="fixed-top">
+		<nav class="navbar navbar-expand-md px-4">
+			<div class="navbar-brand">
+				<a href="#home"><img src="imagens/logo.png" alt=""></a>
+				<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menubar"><span class="fa-solid fa-bars"></span></button>
+			</div>
+
+			<div class="collapse navbar-collapse" id="menubar">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a href="#home" class="nav-link text-white">home</a></li>
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown">meio ambiente</a>
+						<ul class="dropdown-menu p-3">
+							<li><a href="#renovavel" class="dropdown-item text-white">energia renovável</a></li>
+							<li><a href="#floresta" class="dropdown-item text-white">floresta amazônica</a></li>
+							<li><a href="#eolica" class="dropdown-item text-white">energia eólica</a></li>
+							<li><a href="#aquecimento" class="dropdown-item text-white">aquecimento global</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown">minha conta</a>
+						<ul class="dropdown-menu p-3">
+							<li><a href="login.html" class="dropdown-item text-white">login</a></li>
+							<li><a href="cadastro.html" class="dropdown-item text-white">cadastro</a></li>
+						</ul>
+					</li>
+					<li class="nav-item"><a href="#" class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal-contato">contato</a></li>
+				</ul>
+			</div>
+			<div>
+				<a href="#"><span class="fa-brands fa-facebook-square text-white"></span></a>
+				<a href="#"><span class="fa-brands fa-instagram-square  text-white ms-2"></span></a>
+				<a href="#"><span class="fa-brands fa-twitter-square  text-white ms-2"></span></a>
+			</div>
+		</nav>
+	</header>
+	<!-- start boasvindas -->
+	<section class="mt-5 p-5 boasvindas no-margin" id="home">
+		<div class="pt-5">
+			<h2 class="text-center display-5 text-uppercase fw-bold py-5">Nosso planeta, nossa casa!</h2>
+
+			<p class="h3">Ajude a protegê-lo hoje.</p>
+				
+			<p>Nossos problemas estão interligados, assim como as soluções. Seja em um protesto nas ruas, na limpeza das praias, assinando uma petição contra grupos poderosos ou recuperando uma floresta, nós prosperamos e somos mais fortes quando cooperamos. É por isso que o Green Planet existe.</p>
+		</div>
+	</section>
+
+	<!-- start service -->
+	<section class="px-5 text-white text-center row service no-margin">
+		<div class="col-lg-3 col-sm-6 py-5 position-relative">
+			<img src="imagens/icon-01.png" alt="">
+			<h4>Salvem as florestas</h4>
+			<p>A floresta tropical e subtropical húmida é um tipo de ecossistema que ocorre na região compreendida entre o Trópico de Câncer e o Trópico de Capricórnio.</p>
+			<a href="#" class="btn btn-warning fw-bold position-absolute bottom-0 translate-middle">Saiba mais</a>
+		</div>
+		<div class="col-lg-3 col-sm-6 py-5 position-relative">
+			<img src="imagens/icon-02.png" alt="">
+			<h4>Salvem as águas</h4>
+			<p>O desperdício de água no Brasil chega a quase 35%. No Tocantins estima-se que esse número é superior a 40% da água disponibilizada para a população.</p>
+			<a href="#" class="btn btn-warning fw-bold position-absolute bottom-0 translate-middle">Saiba mais</a>
+		</div>
+		<div class="col-lg-3 col-sm-6 py-5 position-relative">
+			<img src="imagens/icon-03.png" alt="">
+			<h4>Reciclar é um dever</h4>
+			<p>A cultura do desperdício, não apenas de recursos, mas também de energia e produtos acabados, vem sofrendo um duro golpe em várias sociedades. </p>
+			<a href="#" class="btn btn-warning fw-bold position-absolute bottom-0 translate-middle">Saiba mais</a>
+		</div>
+		<div class="col-lg-3 col-sm-6 py-5 position-relative">
+			<img src="imagens/icon-04.png" alt="">
+			<h4>Energia renovável</h4>
+			<p class="pt-3">A Energia Eólica é o processo pelo qual o vento é transformado em energia cinética e a partir dela em eletricidade com o uso de equipamentos específicos.</p>
+			<a href="#" class="btn btn-warning fw-bold position-absolute bottom-0 translate-middle">Saiba mais</a>
+		</div>
+	</section>
+
+	<!-- start renovavel -->
+	<section class="container my-5" id="renovavel">
+		<h2 class="text-center text-uppercase fw-bold pb-3">Energia renovável</h2>
+
+		<div class="row pb-5">
+			<div class="col-md-5 col-lg-3">
+				<img src="imagens/energia-renovavel.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="col-md-7 col-lg-9">
+				<p>As fontes renováveis de energia são aquelas formas de produção de energia em que suas fontes são capazes de manter-se disponíveis durante um longo prazo, contando com recursos que se regeneram ou que se mantêm ativos permanentemente. Em outras palavras, fontes de energia renováveis são aquelas que contam com recursos não esgotáveis.</p>
+
+				<p>Existem vários tipos de fontes renováveis de energia, das quais podemos citar a solar, a eólica, a hídrica, a biomassa, a geotérmica, a das ondas e a das marés. Veja um breve resumo sobre cada uma dessas energias não esgotáveis:</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6 pb-3">
+				<div class="card border-dark h-100">
+					<img src="imagens/renovavel_01.jpg" alt="" class="card-img-top">
+					<div class="card-header border-dark bg-secondary text-warning bg-gradient">
+						<h5>Energia hidroelétrica</h5>
+					</div>
+					<div class="card-body">
+						<p>A energia hidroelétrica utiliza-se do movimento das águas dos rios para a produção de eletricidade. Em países como Brasil, Rússia, China e Estados Unidos, ela é bastante aproveitada pelas usinas que transformam a energia hidráulica e cinética em eletricidade.</p>
+					</div>		
+					<div class="card-footer border-dark text-center">
+						<a href="https://www.ecycle.com.br/2906-energia-hidreletrica.html" class="btn btn-outline-dark fw-bold px-5" target="_blank">saiba mais...</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 pb-3">
+				<div class="card border-dark h-100">
+					<img src="imagens/renovavel_02.jpg" alt="" class="card-img-top">
+					<div class="card-header border-dark bg-secondary">
+						<h5 class="text-warning">Energia de biomassa</h5>
+					</div>
+					<div class="card-body">
+						<p>A biomassa corresponde a toda e qualquer matéria orgânica não fóssil. Assim, pode-se utilizar esse material para a queima e produção de energia, por isso ela é considerada uma fonte renovável. Sua importância está no aproveitamento de materiais que, em tese, seriam descartáveis, como restos agrícolas (principalmente o bagaço da cana-de-açúcar), e também na possibilidade de cultivo.</p>
+					</div>
+					
+					<div class="card-footer border-dark text-center">
+						<a href="https://www.portal-energia.com/o-que-e-energia-biomassa/" class="btn btn-outline-dark" target="_blank">saiba mais...</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 pb-3">
+				<div class="card border-dark h-100">
+					<img src="imagens/renovavel_03.jpg" alt="" class="card-img-top" >
+					<div class="card-header border-dark bg-secondary">
+						<h5 class="text-warning">Energia geotérmica</h5>
+					</div>
+					<div class="card-body">
+						<p>A energia geotérmica corresponde ao calor interno da Terra. Em casos em que esse calor se manifesta em áreas próximas à superfície, as elevadas temperaturas do subsolo são utilizadas para a produção de eletricidade.</p>
+					</div>
+					
+					<div class="card-footer border-dark text-center">
+						<a href="https://www.todamateria.com.br/energia-geotermica/" class="btn btn-outline-dark" target="_blank">saiba mais...</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 pb-3">
+				<div class="card border-dark h-10">
+					<img src="imagens/renovavel_04.jpg" alt="" class="card-img-top" >
+					<div class="card-header border-dark bg-secondary">
+						<h5 class="text-warning">Energia heliotérmica</h5>
+					</div>
+					<div class="card-body">
+						<p>A energia heliotérmica, ou energia solar concentrada, é a geração elétrica a partir do calor do sol. Usinas heliotérmicas (termossolares) utilizam vários espelhos (heliostatos) para direcionar a radiação solar a um receptor que armazena um líquido. O líquido aquece e gera o vapor que alimenta as turbinas ligadas ao gerador elétrico.</p>
+					</div>
+					
+					<div class="card-footer border-dark text-center">
+						<a href="https://www.portalsolar.com.br/fontes-de-energia-renovaveis.html" class="btn btn-outline-dark" target="_blank">saiba mais...</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- start slideshow -->
+	<section class="carousel slide carousel-fade no-margin" data-bs-ride="carousel" id="slideshow">
+		<ul class="carousel-indicators">
+			<li data-bs-target="#slideshow" data-bs-slide-to="0" class="active"></li>
+			<li data-bs-target="#slideshow" data-bs-slide-to="1"></li>
+			<li data-bs-target="#slideshow" data-bs-slide-to="2"></li>
+			<li data-bs-target="#slideshow" data-bs-slide-to="3"></li>
+			<li data-bs-target="#slideshow" data-bs-slide-to="4"></li>
+		</ul>
+
+		<div class="carousel-inner">
+			<figure class="carousel-item active">
+				<img src="imagens/slider-1.jpg" class="img-fluid">
+				<figcaption class="carousel-caption">
+					<p class="fs-2">Juntos podemos curar a terra</p>
+					<a href="#" class="btn btn-warning fw-bold">Saiba mais</a>
+				</figcaption>
+			</figure>
+
+			<figure class="carousel-item" data-bs-interval="10000">
+				<img src="imagens/slider-2.jpg" class="img-fluid">
+				<figcaption class="carousel-caption">
+					<p class="fs-2">Ajude-nos a salvar os animais</p>
+					<a href="#" class="btn btn-warning fw-bold">Saiba mais</a>
+				</figcaption>
+			</figure>
+
+			<figure class="carousel-item">
+				<img src="imagens/slider-3.jpg" class="img-fluid">
+				<figcaption class="carousel-caption">
+					<p class="fs-2">Faça desse Mundo um lugar melhor</p>
+					<a href="#" class="btn btn-warning fw-bold">Saiba mais</a>
+				</figcaption>
+			</figure>
+
+			<figure class="carousel-item">
+				<img src="imagens/slider-4.jpg" class="img-fluid">
+				<figcaption class="carousel-caption">
+					<p class="fs-2">Tubarão-baleia em risco de extinção</p>
+					<a href="#" class="btn btn-warning fw-bold">Saiba mais</a>
+				</figcaption>
+			</figure>
+
+			<figure class="carousel-item">
+				<img src="imagens/slider-5.jpg" class="img-fluid">
+				<figcaption class="carousel-caption">
+					<p class="fs-2">Quer um abraço de urso?</p>
+					<a href="#" class="btn btn-warning fw-bold">Saiba mais</a>
+				</figcaption>
+			</figure>
+		</div>
+
+		<a href="#slideshow" class="carousel-control-prev text-decoration-none" data-bs-slide="prev"><span class="fa-solid fa-chevron-left fs-3"></span></a>
+		<a href="#slideshow" class="carousel-control-next text-decoration-none" data-bs-slide="next"><span class="fa-solid fa-chevron-right fs-3"></span></a>
+	</section>
+
+	<!-- start floresta -->
+	<section id="floresta" class="mt-5 pt-5 container">
+		<h2 class="mt-5 text-center fw-bold text-uppercase mb-4">Floresta Amazônica</h2>
+
+		<p>A floresta amazônica é considerada a maior floresta tropical do mundo e concentra enorme biodiversidade. Além disso, ela faz parte do bioma Amazônia, o maior dos seis biomas brasileiros.</p>
+
+		<p>Ela corresponde a 53% das florestas tropicais ainda existentes. Por isso, a sua conservação é debatida em âmbito internacional, em virtude de sua dimensão e importância ecológica.</p>
+		
+		<div class="row">
+			<div class="list-group col-md-3" id="spy-menu">
+				<a href="#item-1" class="list-group-item list-group-item-action border-dark">O que é?</a>
+				<a href="#item-2" class="list-group-item list-group-item-action border-dark">Fauna</a>
+				<a href="#item-3" class="list-group-item list-group-item-action border-dark">Flora</a>
+				<a href="#item-4" class="list-group-item list-group-item-action border-dark">Curiosidades</a>
+			</div>
+			
+			<div class="col-md-9 border border-dark rounded scrollspy" data-bs-spy="scroll" data-bs-target="#spy-menu" data-bs-smooth-scroll="true">
+				<h4 id="item-1">O que é a Floresta Amazônica?</h4>
+				<p>A Floresta Amazônica é a região tida como a maior floresta tropical do mundo ocupando, aproximadamente, 600 milhões de hectares. Seu nome surgiu com os antigos habitantes e expedições europeias que relataram ataques promovidos por mulheres nuas que usavam arco e flecha no Rio Amazonas.</p>
+
+				<p>Também é chamada de Selva Amazônica, Floresta Equatorial da Amazônia, Floresta Pluvial ou Hileia Amazônica. Trata-se de floresta latifoliada úmida e é um dos seis grandes biomas brasileiros. Abrange as regiões Nordeste, Norte e Centro-Oeste brasileiras, sendo o maior bioma terrestre do país.</p>
+
+				<p>A título de curiosidade, no dia 05 de setembro comemora-se o Dia da Amazônia por ser a data de criação da Província do Amazonas, em 1850, por D. Pedro I. Em 2008, foi uma das candidatas às novas 7 Maravilhas da Natureza, sendo classificada em primeiro lugar no ano de 2009.</p>
+
+				<div class="pb-5 mb-5"></div>
+				<h4 id="item-2">Animais da Amazônia</h4>
+				<!-- <img src="imagens/floresta_01.jpg" alt=""> -->
+				<p>A fauna amazônica é a mais espetacular do planeta, incluindo felinos, roedores, aves, quelonios e primatas.</p>
+
+				<p>Sua bacia hidrográfica possui a maior diversidade de peixes do mundo: entre 2.500 e 3 mil espécies. Destas, jaú, surubim, cachorra, matrinxã, piranha e tambaqui são alguns dos mais cobiçados dos amantes da pesca esportiva. Porém, a lista dos preferidos é encabeçada pelo tucunaré, famoso por ser muito bom de briga.</p>
+
+				<p>Além disso, na Amazônia vivem 1.300 espécies de pássaros e 300 de mamíferos. No total, a fauna da região totaliza mais de 2 milhões de espécies, muitas das quais encontradas apenas na região. Com freqüência os pesquisadores descobrem novas espécies. Alguns animais são para lá de exóticos: são os casos do peixe-boi (de mais de 2 metros de comprimento), da ave guará de penas vermelhas e o poraquê, “peixe elétrico” que liberar carga de alta voltagem.</p>
+
+				<p>Isso, sem falar de espécies já famosas como tucano, piranha, araras, papagaios e macacos.</p>
+
+				<div class="pb-5 mb-5"></div>
+				<h4 id="item-3">Vegetação da floresta</h4>
+				<p>A Floresta Amazônica, no geral, é composta por uma vegetação densa e árvores de grande porte. Pode ser dividida em três categorias, sendo elas:</p>
+
+				<ul>
+					<li><b>Mata de terra firme:</b> a maior parte da floresta que não sofre inundações por localizar-se em partes mais altas, apresentando árvores de grande porte. São exemplares típicos a castanheira, angelim, mogno, cedro, andiroba, além de cipós, palmeiras, liquens e musgos.</li>
+					<li><b>Mata de igapó:</b> permanentemente inundada por se localizar em regiões muito baixas, são alagadas com frequência. Por isso, as plantas se adaptaram a esse ambiente para sobrevivência. São exemplos os buritis, orquídeas, vitória-régia e bromélias.</li>
+					<li><b>Mata de várzea:</b> sua localização em áreas pouco menos baixas que possibilita a inundação periódica conforme a ação dos rios. Apresenta solo muito fértil em razão dos sedimentos depositados pela água fluvial. As plantas nascem a água baixa e os frutos aparecem quando sobem. Exemplares típicos são jatobá, andiroba, samaúma, cumaru e seringueira.</li>
+				</ul>
+
+				<div class="pb-5 mb-5"></div>
+				<h4 id="item-4">Curiosidades</h4>
+				<p>Criada em 1953, a Amazônia Legal é uma área que abrange nove estados brasileiros: Acre, Amapá, Pará, Amazonas, Rondônia, Roraima, Mato Grosso, Tocantins e Maranhão. Ela compreende, aproximadamente, 61% de todo o território brasileiro.</p>
+						
+				<p>O objetivo da criação da Amazônia Legal é promover o desenvolvimento econômico e social da região.</p>
+
+				<p>No dia 5 de setembro é comemorado o "Dia da Amazônia", a data foi escolhida pois foi no dia 5 de setembro de 1850 que a província do Amazonas foi criada por D.Pedro I.</p>
+				<div class="pb-5 mb-5"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- start ambiente -->
+	<section class="my-5 p-5 ambiente no-margin">
+		<h2 class="text-center text-uppercase fw-bold py-5 mt-4">meio ambiente</h2>
+
+		<div class="container pb-5 accordion" id="sanfona">
+			<div class="accordion-item">
+				<div class="accordion-header">
+					<button data-bs-toggle="collapse" data-bs-target="#amb01" class="accordion-button collapsed">Pra você, o que é meio ambiente?</button>
+				</div>
+				<div class="accordion-collapse collapse" id="amb01" data-bs-parent="#sanfona">
+					<p class="accordion-body">O meio ambiente corresponde a todo espaço que nos rodeia, incluindo aquele em que vivemos. Fazem parte do meio ambiente, todos os elementos da natureza como montanhas, rios, solo, água, floresta, relevo, geologia, paisagem e fatores meteoroclimáticos, árvores, animais, incluindo o homem e tudo criado por ele.</p>
+				</div>
+			</div>
+
+			<div class="accordion-item">
+				<div class="accordion-header">
+					<button data-bs-toggle="collapse" data-bs-target="#amb02" class="accordion-button collapsed">Você sabe o que são fontes de energia renovável? E quais são?</button>
+				</div>
+				<div class="accordion-collapse collapse" id="amb02" data-bs-parent="#sanfona">
+					<p class="accordion-body">Energias renováveis são aquelas obtidas de fontes naturais capazes de se regenerar, portanto virtualmente inesgotáveis e não alteram o balanço térmico do planeta. A energia não renovável é obtida dos combustíveis fósseis que necessitam de milhares de anos para sua formação, sendo, portanto esgotáveis. Ex: - Energia Termo-Solar - Energia Solar Passiva - Energia Eólica - Energia Geotérmica - Central Hidrelétrica.</p>
+				</div>
+			</div>
+
+			<div class="accordion-item">
+				<div class="accordion-header">
+					<button data-bs-toggle="collapse" data-bs-target="#amb03" class="accordion-button collapsed">Qual a importância da fauna e da flora para nossas vidas?</button>
+				</div>
+				<div class="accordion-collapse collapse" id="amb03" data-bs-parent="#sanfona">
+					<p class="accordion-body">Os animais dispersam sementes "plantando" árvores, controlam populações de espécies, e ainda produzem remédios importantes para a cura de muitas doenças. Cada animal tem sua função na natureza e a sua ausência acarreta em prejuízos incalculáveis para a humanidade. A Flora são todas as espécies de plantas, cada uma tem sua importância, seja na alimentação para as animais e nos humanos, como na capturarão de gases tóxicos à natureza NBA realização da fotossíntese e liberando oxigênio na sua respiração.</p>
+				</div>
+			</div>
+
+			<div class="accordion-item">
+				<div class="accordion-header">
+					<button data-bs-toggle="collapse" data-bs-target="#amb04" class="accordion-button collapsed">O que é reciclagem? Qual a importância da reciclagem para o meio ambiente e para os seres humanos?</button>
+				</div>
+				<div class="accordion-collapse collapse" id="amb04" data-bs-parent="#sanfona">
+					<p class="accordion-body">Reciclar significa transformar objetos materiais usados em novos produtos para o consumo. No processo de reciclagem, que além de preservar o meio ambiente também gera riquezas, os materiais mais reciclados são o vidro, o alumínio, o papel e o plástico. Esta reciclagem contribui para a diminuição significativa da poluição do solo, da água e do ar. Muitas indústrias estão reciclando materiais como uma forma de reduzir os custos de produção.</p>
+				</div>
+			</div>
+
+			<div class="accordion-item">
+				<div class="accordion-header">
+					<button data-bs-toggle="collapse" data-bs-target="#amb05" class="accordion-button collapsed">Qual a diferença entre reciclar e reaproveitar?</button>
+				</div>
+				<div class="accordion-collapse collapse" id="amb05" data-bs-parent="#sanfona">
+					<p class="accordion-body">Na reciclagem aproveitamos a matéria prima para produzir novos produtos, Reutilizar é usar o material de novo, o material não seria necessariamente descartado, não passaria por outro processo produtivo, estando em condições, pode ser reutilizado.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- start eolica -->
+	<section id="eolica" class="container my-5 pt-5">
+		<h2 class="text-center text-uppercase fw-bold py-5">Energia eólica</h2>
+
+		<p>A utilização da energia eólica comporta numerosas vantagens face às energias tradicionais e mesmo em comparação com outros tipos de energias renováveis, em função do seu maior desenvolvimento.</p>
+
+		<p>A energia eólica é muitas vezes não compreendida pelas populações, principalmente pelas populações mais próximas dos parques eólicos, mas a energia eólica possui inúmeras vantagens para a sociedade em geral, desde a redução da dependência dos combustíveis fósseis até à criação de empregos.</p>
+
+		<p>Apesar das aparentes vantagens no uso de energia eólica para a produção de energia elétrica, este tipo de aproveitamento energético eólico apresenta também desvantagens e impactos significativos principalmente no uso de grandes aerogeradores, parques e usinas eólicas.</p>
+
+		<table class="table table-warning table-striped table-hover table-bordered">
+			<thead class="table-dark text-center">
+				<tr>
+					<th>Vantagens</th>
+					<th>Desvantagens</th>
+				</tr>
+			</thead>
+			<tbody class="table-group-divider">
+				<tr>
+					<td>É uma tecnologia inesgotável</td>
+					<td>Como é preciso um fenômeno da natureza para funcionar, às vezes a energia não é gerada em momentos necessários, o que torna difícil a integração da produção dessa tecnologia</td>
+				</tr>
+				<tr>
+					<td>Não emite gases poluentes e não gera resíduos</td>
+					<td>Pode ser superada pelas pilhas de combustível (H2) ou pela técnica da bombagem hidroelétrica</td>
+				</tr>
+				<tr>
+					<td>Os parques eólicos podem ser utilizadas também para outros meios, como a agricultura e a criação de gado</td>
+					<td>Os parques eólicos geram um grande impacto visual devido aos aerogeradores</td>
+				</tr>
+				<tr>
+					<td>É uma das fontes mais baratas de energia, podendo competir em termos de rentabilidade com as fontes de energia tradicionais</td>
+					<td>Causa impacto sonoro, pois o vento bate nas pás produzindo um ruído constante de aproximadamente 43 decibéis, tornando necessário que as habitações mais próximas estejam no mínimo a 200 metros de distância</td>
+				</tr>
+				<tr>
+					<td>Não requer uma manutenção frequente, uma vez que sua revisão é semestral</td>
+					<td>Pode afetar o comportamento habitual de migração das aves</td>
+				</tr>
+			</tbody>
+		</table>	
+	</section>
+
+	<!-- start reciclagem -->
+	<section class="p-5 reciclagem no-margin">
+		<h2 class="text-center text-uppercase fw-bold pb-5">Reciclagem</h2>
+
+		<p>Um dos principais problemas ambientais do mundo contemporâneo é, sem dúvida, a grande quantidade de resíduos gerados pela população. Junto com isso, aparece um problema ainda maior, que é a falta de reaproveitamento desses produtos.</p>
+
+		<img src="imagens/reciclagem.jpg" alt="" class="float-start pe-3">
+
+		<p>Para se ter ideia da gravidade desta situação, dados divulgados pela Associação Brasileira de Empresas de Limpeza Pública e Resíduos Especiais (Abrelpe) apontam que a quantidade de lixo produzido no Brasil vem batendo recorde ano após ano. Em 2015, foram geradas 79,9 milhões de toneladas de lixo em todo o País, número 1,7% maior do que o gerado em 2014.</p>
+		
+		<p>À primeira vista, considerando o tamanho do território e a quantidade de cidadãos brasileiros, pode parecer um número razoável, mas este é um dado bastante alarmante. Isso porque a quantidade de lixo produzido no Brasil cresce a uma taxa cinco vezes maior que o da população.</p>
+
+		<p>Apesar de muitas cidades contarem com serviços de coleta seletiva destinados especificamente à reciclagem, existem locais em que não existe esse serviço. Para dar conta dessa demanda, existem diversos catadores de itens recicláveis — que podem atuar tanto por si mesmos como para uma cooperativa de reciclagem de resíduos. Esses profissionais são fundamentais para aumentar a porcentagem do lixo que é reciclado no Brasil.</p>
+
+		<p>De acordo com dados do Plano Nacional de Resíduos Sólidos (PNRS), apesar de 30% de todo o lixo produzido no Brasil ter potencial de reciclagem, apenas 3% de fato é reaproveitado. Esses números revelam que há um grande desperdício tanto do ponto de vista ambiental quanto econômico e social, uma vez que a reciclagem é uma fonte de renda para milhares de famílias.</p>
+
+		<p>Veja abaixo alguns números da reciclagem por setores:</p>
+
+		<div class="row justify-content-center">
+			<ul class="list-group col-sm-4">
+				<li class="list-group-item">Latas de alumínio <span class="badge text-bg-success p-2 fs-6 float-end">91%</span></li>
+				<li class="list-group-item bg-warning">Papel <span class="badge text-bg-success p-2 fs-6 float-end">44%</span></li>
+				<li class="list-group-item">Vidro <span class="badge text-bg-success p-2 fs-6 float-end">47%</span></li>
+				<li class="list-group-item">Embalagem PET <span class="badge text-bg-danger p-2 fs-6 float-end">55%</span></li>
+				<li class="list-group-item">Latas de aço <span class="badge text-bg-success p-2 fs-6 float-end">44%</span></li>
+				<li class="list-group-item">Embalagem longa-vida <span class="badge rounded-pill text-bg-success p-2 fs-6 float-end">27%</span></li>
+			</ul>	
+		</div>
+	</section>
+
+	<!-- start aquecimento -->
+	<section id="aquecimento" class="my-5 container pt-5">
+		<h2 class="text-center text-uppercase fw-bold my-5">Aquecimento global</h2>
+
+		<img src="imagens/aquecimento.jpg" alt="" class="mx-auto d-block pb-3">
+
+		<p>O aquecimento global é o processo de mudança da temperatura média global da atmosfera e dos oceanos. O acúmulo de altas concentrações de gases de efeito estufa na atmosfera bloqueia o calor emitido pelo sol e o prende na superfície terrestre, aumentando a temperatura média da Terra.</p>
+
+		<div class="alert alert-info">
+			<p>O efeito estufa é um processo essencial para a existência de vida na forma em que a conhecemos. Sem ele a temperatura média do planeta seria em torno de 18°C negativos! Para se ter uma ideia, a temperatura média global próxima à superfície é de 14ºC. Se hoje estamos vivos é devido ao efeito estufa, que mantém o planeta habitável.</p>
+			<a href="https://www.ecycle.com.br/6215-efeito-estufa.html" class="alert-link" target="_blank">saiba mais</a>
+		</div>
+
+		<p>O mundo está se tornando mais quente. Mas esse é um processo natural da Terra ou decorre da ação humana? Há muita discussão em torno do assunto, mas é sempre bom esclarecer o que é o aquecimento global, processo que o vídeo produzido pela equipe do Portal eCycle explica:</p>
+		
+		<p>Assim, o aquecimento global é um processo que decorre da intensificação do efeito estufa - a radiação que vem da luz do sol atinge a Terra e é absorvida por gases presentes na atmosfera, os quais passam a emitir de volta para a superfície terrestre radiação infravermelha (calor), aumentando a temperatura do planeta. Os gases que interagem com a radiação solar produzindo radiação infravermelha são chamados de Gases de Efeito Estufa.</p>
+
+		<div class="row pb-3">
+			<div class="col-md-6">
+				<div class="ratio ratio-16x9">
+					<iframe src="https://www.youtube.com/embed/LkHvR_dL3iA" frameborder="0"></iframe>
+				</div>
+			</div>
+
+			<div class="alert alert-warning col-md-6">
+				<h5 class="alert-heading">Gases do efeito estufa</h5>
+				<p>Os gases de efeito estufa (GEE) são gases que absorvem uma parte dos raios do sol e os redistribuem em forma de radiação na atmosfera, aquecendo o planeta em um fenômeno chamado efeito estufa.</p>
+				<hr>
+				<p>Os principais GEE que temos são: gás carbônico (CO<sub>2</sub>), metano (CH<sub>4</sub>), óxido nitroso (N<sub>2</sub>O), ozônio estratosférico (O<sub>3</sub>), halocarbonos (clorofluorcarbonos, os hidroclorofluorcarbonos e os hidrofluorcarbonos) e vapor d’água.</p>
+			</div>
+		</div>
+
+		<p>Em relatório encomendado pelo Fórum Econômico Mundial, intitulado Global Risks 2013, o aquecimento global associado ao desequilíbrio do efeito estufa já era reconhecido como o terceiro maior risco global por conta dos grandes fenômenos climáticos de 2012, como o furacão Sandy e as enchentes na China. A indústria seguradora é um bom exemplo disso - acompanha com apreensão a crescente sucessão de desastres naturais que impactam, direta e imprevisivelmente, o risco de suas operações.</p>
+
+		<div class="alert alert-danger border-dark alert-dismissible fade show">
+			<button class="btn-close" data-bs-dismiss="alert"></button>
+			<p>Uma pesquisa liderada por Nigel Arnell, diretor do Instituto Walker, da Universidade de Reading, no Reino Unido, demonstra que o estabelecimento de políticas que garantam o aumento de temperatura de até 2°C até o ano de 2100, pode reduzir 65% dos impactos ambientais. A previsão é de que até o fim do século, o aquecimento global conduzirá o planeta a uma temperatura até 4°C mais quente. O Acordo de Paris, estabelecido em dezembro de 2015, tem a meta de limitar o aquecimento global em 2°C até 2100.</p>
+		</div>
+	</section>
+
+	<!-- start footer -->
+	<footer class="py-3 px-5 text-light rodape no-margin">
+		<img src="imagens/logo.png" class="float-start">
+
+		<p class="float-end pt-3">&copy; 2023 - Green Planet</p>
+	</footer>
+</div>
+
+<!-- start modal -->
+<div class="modal fade" id="modal-contato" data-bs-backdrop="static" data-bs-keyboard="false">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form action="" method="get">
+				<div class="modal-header border-0">
+					<h2><span class="fa-regular fa-id-card"></span> Contato</h2>
+					<button class="btn-close" data-bs-dismiss="modal"></button>
+				</div>
+				<div class="modal-body">
+					<label for="">Nome:</label>
+					<input type="text" name="tNome" placeholder="digite seu nome completo" class="form-control border-dark">
+					
+					<label for="" class="pt-3">Email:</label>
+					<input type="email" name="tEmail" placeholder="por ex.: joaodasilva@email.com" class="form-control border-dark mb-3">
+					
+					<label for="">Mensagem:</label>
+					<textarea name="tMsg" rows="5" placeholder="digite aqui a sua mensagem" class="form-control border-dark"></textarea>
+				</div>
+				<div class="modal-footer border-0 justify-content-center">
+					<input type="reset" value="limpar" class="btn btn-danger">
+					<input type="submit" value="enviar" class="btn btn-success">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- <script>
+    $(window).on('load',function(){
+	//$(document).ready(function(){
+    	$('#modal-contato').modal('show'); 
+	});
+</script> -->
+
+</body>
+</html>
